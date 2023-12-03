@@ -18,7 +18,7 @@ const profils = [
         name: "Basile ALEVEQUE",
         age: "18 ans",
         image: "./assets/persos/basile.png",
-        accroche: "Tout vient à point à qui sait attendre",
+        accroche: "Tout vient à point à qui sait attendre.",
         signe: "poisson",
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore provident nam, autem quas delectus amet dolorum dolor, error at, a dolore asperiores aspernatur tenetur eum quo labore quisquam qui nesciunt ? Eaque ad est sint labore aliquid nemo, perferendis earum libero. Accusamus ea repellendus sequi nobis a pariatur ullam fugiat quis cum saepe neque doloremque repellat nihil optio, quisquam libero placeat. Rerum, repellendus? Corporis sequi laboriosam quas quam molestias et, iste inventore reprehenderit itaque perferendis blanditiis est molestiae eos, soluta officia, repudiandae quod vel laborum perspiciatis sed sit ad. Nemo, provident! Numquam, reprehenderit molestiae nam, distinctio, iusto ipsa quaerat repellendus corporis fuga enim nulla in quos est? Dignissimos incidunt magnam eum sint unde. Voluptates ex beatae facere maxime aperiam nulla ullam! Laborum eaque velit est laboriosam possimus suscipit, labore autem illo iure. Consectetur pariatur ipsa quisquam repudiandae veniam ipsam asperiores dicta, architecto dolor cumque, corporis sunt ut perferendis quae, voluptas nemo?",
         soft: "Soft 1, Soft 2, Soft 3, Soft 4, Soft 5",
