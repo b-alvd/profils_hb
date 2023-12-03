@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/backgroundStars.png");
+    background-color: #f4f4f4;
+}
+
+#profils-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.profil-card {
+    width: 200px;
+    height: 300px;
+    background-color: #dddddd;
+    margin: 15px;
+    margin-top: 10vh;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.profil-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 1.0);
+}
+.profil-image {
+    width: 100%;
+    height: 60%;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+}
+.profil-identite {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background: #dddddd;
+    width: 85%;
+    height: 85%;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+    transition: transform 0.5s ease-in-out;
+}
+.close-btn:hover {
+    transform: rotate(360deg);
+}
+
+.arrow-btn {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    top: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.arrow-btn:hover {
+    transform: scale(1.30);
+}
+.prev-btn {
+    left: -50px;
+}
+.next-btn {
+    right: -50px;
+}
+@keyframes zoomInOutArrows {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+
+
+/* Intérieur popup */
+.cadre-popup-photo {
+    padding: 30px;
+    width: 100px;
+    margin-left: 50px;
+    border: 5px solid black;
+}
+.popup-photo {
+    width: 100px;
+}
+
+.popup-identite {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 270px;
+    margin-top: -130px;
+}
+.popup-age {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 600px;
+    margin-top: -130px;
+}
+
+.popup-accroche {
+    position: absolute;
+    font-size: 20px;
+    margin-left: 270px;
+    margin-top: -80px;
+}
+
+.popup-signe {
+    position: absolute;
+    width: 170px;
+    margin-left: 1325px;
+    margin-top: -170px;
+    border: 3px solid rgb(59, 59, 122);
+    border-radius: 20px;
+}
+
+.popup-description {
+    position: absolute;
+    width: 70%;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.title-popup-soft {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+.popup-soft {
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 50px;
+}
+
+.cadre-popup-expertise {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 300px;
+}
+.popup-expertise {
+    width: 60px;
+    margin-right: 100px;
+}
+
+.title-popup-hobbies {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+.popup-hobbies {
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 50px;
+}
+
+.popup-reseaux {
+    position: absolute;
+    background-color: rgba(70, 70, 70, 0.5);
+    width: 90%;
+    height: 145px;
+    margin-top: 490px;
+    margin-left: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.popup-linkedin {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 300px;
+    transition: all 0.5s;
+}
+.popup-linkedin:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.popup-lien-linkedin {
+    cursor: default;
+    text-decoration: none;
+}
+.popup-github {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 300px;
+    transition: all 0.5s;
+}
+.popup-github:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.popup-lien-github {
+    cursor: default;
+    text-decoration: none;
+}
+.popup-cv {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 300px;
+    transition: all 0.5s;
+}
+.popup-cv:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+.popup-lien-cv {
+    cursor: default;
+    text-decoration: none;
+}
+
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    z-index: 999;
+}
