@@ -131,48 +131,48 @@ body {
     position: absolute;
     font-size: 30px;
     margin-left: 270px;
-    margin-top: -130px;
+    margin-top: -160px;
 }
 .popup-age {
     position: absolute;
     font-size: 30px;
     margin-left: 600px;
-    margin-top: -130px;
+    margin-top: -160px;
 }
 
 .popup-accroche {
     position: absolute;
     font-size: 20px;
     margin-left: 270px;
-    margin-top: -80px;
+    margin-top: -110px;
 }
 
 .popup-signe {
     position: absolute;
     width: 170px;
     margin-left: 1325px;
-    margin-top: -170px;
+    margin-top: -175px;
     border: 3px solid rgb(59, 59, 122);
     border-radius: 20px;
 }
 
 .popup-description {
     position: absolute;
-    width: 70%;
+    width: 60%;
     font-size: 15px;
-    margin-left: 50px;
-    margin-top: 40px;
+    margin-left: 270px;
+    margin-top: -70px;
 }
 
 .title-popup-soft {
     position: absolute;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 50px;
     text-decoration: underline;
 }
 .popup-soft {
     position: absolute;
-    margin-top: 240px;
+    margin-top: 100px;
     margin-left: 50px;
 }
 
